@@ -1,12 +1,12 @@
-$color--black: #000;
-$color--white: #fff;
+@import "../../node_modules/bootstrap/scss/bootstrap";
+// Required
+@import "../node_modules/bootstrap/scss/functions";
 
-body {
-  background-color: $color--black;
-  h1 {
-    color: $color--white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-}
+// Default variable overrides
+$body-bg: #000;
+$body-color: #111;
+
+// Required
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+@import "../node_modules/bootstrap/scss/root";
