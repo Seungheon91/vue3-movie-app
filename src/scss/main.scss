@@ -1,12 +1,8 @@
-@import "../../node_modules/bootstrap/scss/bootstrap";
-// Required
-@import "../node_modules/bootstrap/scss/functions";
-
 // Default variable overrides
-$body-bg: #000;
-$body-color: #111;
+$primary: #fdc000;
 
 // Required
-@import "../node_modules/bootstrap/scss/variables";
-@import "../node_modules/bootstrap/scss/mixins";
-@import "../node_modules/bootstrap/scss/root";
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/mixins";
+@import "../../node_modules/bootstrap/scss/bootstrap";
