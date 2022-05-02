@@ -1,5 +1,7 @@
 <template>
-  <RouterLink to="/" class="logo">
+  <RouterLink
+    to="/"
+    class="logo">
     <span>OMDbAPI</span>.COM
   </RouterLink>
 </template>
