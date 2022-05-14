@@ -47,7 +47,7 @@ export default {
         },
         {
           name: 'number',
-          items: [10, 11, 12]
+          items: [10, 20, 30]
         },
         {
           name: 'year',
@@ -69,7 +69,7 @@ export default {
       this.$store.dispatch('movie/searchMovies', {
         title: this.title,
         type: this.type,
-        number: this.number,
+        number: parseInt(this.number),
         year: this.year,
       })
     }

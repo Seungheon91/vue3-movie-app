@@ -26,19 +26,24 @@ export default {
       const res = await axios.get(
         `https://www.omdbapi.com/?apikey=${OMDB_API_KEY}&s=${title}&type=${type}&y=${year}&page=1`
       );
-      const { Search, totalReults } = res.data;
+
+      const { Search, totalResults } = res.data;
 
       commit("updateState", {
         movies: Search,
       });
-      console.log(totalReults); // 268 => 27
-      console.log(typeof totalReults); // string
 
-      const total = parseInt(totalReults, 10);
+      console.log(totalResults)
+      console.log(typeof totalResults)
+
+
+      const total = parseInt(totalResults, 10);
       const pageLength = Math.ceil(total / 10);
 
       if (pageLength > 1) {
         for (let page = 2; page <= pageLength; page += 1) {
+          console.log(page)
+          if (page > (number / 10)) break
           const res = await axios.get(
             `https://www.omdbapi.com/?apikey=${OMDB_API_KEY}&s=${title}&type=${type}&y=${year}&page=${page}`
           );
@@ -48,6 +53,7 @@ export default {
           });
         }
       }
+      console.log(state.movies)
     },
   },
 };
