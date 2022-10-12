@@ -52,13 +52,18 @@ module.exports = {
       {
         test: /\.js$/,
         exclude: /node_modules/, // 제외할 경로
-        use: [
-          'babel-loader'
-        ]
+        use: ['babel-loader']
       },
       {
         test: /\.(png|jpe?g|gif|webp)$/,
-        use: 'file-loader'
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              esModule: false,
+            },
+          },
+        ],
       }
     ]
   },
