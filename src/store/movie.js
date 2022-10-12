@@ -40,9 +40,6 @@ export default {
           movies: _uniqBy(Search, "imdbID"),
         });
 
-        console.log(totalResults);
-        console.log(typeof totalResults);
-
         const total = parseInt(totalResults, 10);
         const pageLength = Math.ceil(total / 10);
 
@@ -75,7 +72,7 @@ export default {
       })
 
       try {
-        const res = await _fetchMovie({payload})
+        const res = await _fetchMovie(payload)
         commit('updateState', {
           theMovie: res.data
         })
@@ -98,7 +95,7 @@ function _fetchMovie(payload) {
   const url = id
     ? `https://www.omdbapi.com/?apikey=${OMDB_API_KEY}&i=${id}`
     : `https://www.omdbapi.com/?apikey=${OMDB_API_KEY}&s=${title}&type=${type}&y=${year}&page=${page}`;
-  
+  console.log(url)
   return new Promise((resolve, reject) => {
     axios
       .get(url)
