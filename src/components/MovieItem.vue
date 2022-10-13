@@ -1,7 +1,11 @@
 <template>
   <div
-    class="movie"
-    :style="{backgroundImage: `url(${movie.Poster})`}">
+    :style="{backgroundImage: `url(${movie.Poster})`}"
+    class="movie">
+    <Loader
+      v-if="imageLoading"
+      :size="1.5"
+      absolute />
     <div class="info">
       <div class="year">
         {{ movie.Year }}
@@ -14,13 +18,32 @@
 </template>
 
 <script>
+import Loader from '~/components/Loader'
+
 export default {
+  components: {
+    Loader
+  },
   props: {
     movie: {
       type: Object,
       default: () => ({}),
     },
   },
+  data() {
+    return {
+      imageLoading: true
+    }
+  },
+  mounted() {
+    this.init()
+  },
+  methods: {
+    async init() {
+      await this.$loadImage(this.movie.Poster)
+      this.imageLoading = false
+    }
+  }
 };
 </script>
 
