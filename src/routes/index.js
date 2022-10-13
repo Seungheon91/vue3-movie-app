@@ -2,6 +2,7 @@ import { createRouter, createWebHashHistory } from "vue-router";
 import Home from "./Home.vue";
 import Movie from "./Movie.vue";
 import About from "./About.vue";
+import NotFound from "./NotFound.vue";
 
 export default createRouter({
   // Hash
@@ -12,15 +13,19 @@ export default createRouter({
   routes: [
     {
       path: "/",
-      component: Home,
+      component: Home
     },
     {
       path: "/movie/:id",
-      component: Movie,
+      component: Movie
     },
     {
       path: "/about",
-      component: About,
+      component: About
     },
+    {
+      path: '/:notFound(.*)',
+      component: NotFound
+    }
   ],
 });
