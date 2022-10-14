@@ -1,4 +1,6 @@
-# Vue3 템플릿 with Webpack
+# Vue3 영화 검색 사이트 with Webpack
+
+# DEMO -> https://resilient-eclair-551f20.netlify.app
 
 ## Versions
 
