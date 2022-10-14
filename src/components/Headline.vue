@@ -17,7 +17,6 @@
 </template>
 
 <style lang="scss" scoped>
-@import "~/scss/main";
 h1 {
   line-height: 1;
   font-family: "Oswald", sans-serif;
