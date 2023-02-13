@@ -14,7 +14,7 @@ vue3 영화 검색 사이트 with Webpack
 - ESLint __(+ESLint)__
 - Vuex __(+Vuex)__
 - Vue Router __(+VueRouter)__
-
+- IDE : vscode 
 ## Packages
 __webpack__: 모듈(패키지) 번들러의 핵심 패키지<br>
 __webpack-cli__: 터미널에서 Webpack 명령(CLI)을 사용할 수 있음<br>
