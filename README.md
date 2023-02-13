@@ -1,17 +1,10 @@
-# Vue3 영화 검색 사이트 with Webpack
+# vue3-movie-app
+vue3 영화 검색 사이트 with Webpack
 
-## DEMO -> https://resilient-eclair-551f20.netlify.app
+## 🖥️DEMO 
+<a href="https://resilient-eclair-551f20.netlify.app" target="_blank">DEMO</a>
 
-## Versions
-
-- [Default](https://github.com/ParkYoungWoong/vue3-webpack-template/tree/master)<br>
-- [+ESLint](https://github.com/ParkYoungWoong/vue3-webpack-template/tree/eslint)<br>
-- [+ESLint+Vuex](https://github.com/ParkYoungWoong/vue3-webpack-template/tree/vuex)<br>
-- [+ESLint+Vuex+VueRouter](https://github.com/ParkYoungWoong/vue3-webpack-template/tree/vue-router)<br>
-
-
-## Specs
-
+## ⚙️개발환경
 - Vue3
 - Webpack
 - SCSS
@@ -23,7 +16,6 @@
 - Vue Router __(+VueRouter)__
 
 ## Packages
-
 __webpack__: 모듈(패키지) 번들러의 핵심 패키지<br>
 __webpack-cli__: 터미널에서 Webpack 명령(CLI)을 사용할 수 있음<br>
 __webpack-dev-server__: 개발용으로 Live Server를 실행(HMR)<br>
