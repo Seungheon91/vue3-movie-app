@@ -1,5 +1,5 @@
 # vue3-movie-app
-vue3 영화 검색 사이트 with Webpack
+vue3, OMDB API 이용한 영화 검색 사이트
 
 ## 🖥️DEMO 
 <a href="https://resilient-eclair-551f20.netlify.app" target="_blank">DEMO</a>
@@ -15,6 +15,7 @@ vue3 영화 검색 사이트 with Webpack
 - Vuex __(+Vuex)__
 - Vue Router __(+VueRouter)__
 - IDE : vscode 
+
 ## Packages
 __webpack__: 모듈(패키지) 번들러의 핵심 패키지<br>
 __webpack-cli__: 터미널에서 Webpack 명령(CLI)을 사용할 수 있음<br>
@@ -51,7 +52,6 @@ __vuex__: 중앙 집중식 저장소 __(+Vuex)__<br>
 __vue-router__: 라우터 __(+VueRouter)__<br>
 
 ## 주의사항!
-
 - `npm i vue@next`로 설치(3버전)
 - `npm i vue-loader@next`로 설치(3버전)
 - `npm i -D webpack-dev-server@next`로 설치(webpack-cli 버전(@4^)과 일치)!<br>
@@ -61,7 +61,6 @@ __vue-router__: 라우터 __(+VueRouter)__<br>
 - `.eslintrc.js` 생성(ESLint 구성 옵션)! __(+ESLint)__<br>
 
 ## ESLint Auto fix on save for VSCode
-
 - 모든 명령 표시(Windows: `Ctrl`+`Shift`+`P` / macOS: `Cmd`+`Shift`+`P`)
 - 모든 명령 표시에서 `settings` 검색
 - `Preferences: Open Settings (JSON)` 선택
