@@ -1,5 +1,6 @@
 # vue3-movie-app
 vue3, OMDB API 이용한 영화 검색 사이트
+- 패스트캠퍼스 예제 클론코딩
 
 ## 🖥️DEMO 
 <a href="https://resilient-eclair-551f20.netlify.app" target="_blank">DEMO</a>
